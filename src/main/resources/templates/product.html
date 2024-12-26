@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmln:th="http://www.thymeleaf.org">
+	<head>
+		<title>product form</title>
+		</head>
+		<body>
+			
+		
+		<h2>Product Details Form</h2>
+		    <form th:action="@{/SaveProduct}" method="post">
+				
+				
+		        <label>Name:</label><br>
+		        <input type="text"  name="name" required><br><br>
+		        
+		        <label >Brand:</label><br>
+		        <input type="text"  name="brand" required><br><br>
+		        
+		        <label>MadeIn:</label><br>
+		        <input type="text"  name="madeIn" required><br><br>
+		        
+				<label>price:</label><br>
+			  <input type="number"  name="price" required><br><br>
+			  
+			  <label > quantity:</label><br>
+			  		<input type="number"  name="quantity" required><br><br>
+					
+								
+		<label > discountRate:</label><br>
+		<input type="number" name="discountRate" required><br><br>
+		                
+		   <input type="submit" value="Submit">
+
+    </form>
+							
+  </body>	
+</html>
